@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0px auto;
+        padding: auto;
+    }
+    .wrapper{
+       background-color: antiquewhite;
+        width: 500px;
+        height: 680px;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+
+    }
+
+    .menu li{
+        position: absolute;
+       float: left;
+       font-size: 20px;
+       list-style-type: none;
+       text-align: center;
+    }
+    .menu li:hover{
+        font-weight: bold;
+    }
+
+    .menu li:hover >a{
+        color: red; 
+    }
+    .menu li:nth-child(3){
+        width: 100px;
+        height: 25px;
+        left: 310px;
+        border-right: 1px solid black;
+    }
+    .menu li:nth-child(2){
+        width: 150px;
+        height: 25px;
+        left: 150px;
+        border-right: 1px solid black;
+    }
+    .menu li:nth-child(1){
+        width: 100px;
+        height: 25px;   
+        border-right: 1px solid black;
+    }
+    .sta{
+        position: relative;
+        width: 100%;
+        height: 170px;
+
+    }
+    .sta p{
+        font-size: 22px;
+        text-indent: 50px;
+    }
+    .sta p::before{
+        content: "\2022";
+        color: black;
+        margin-right: 20px;
+    }
+    .sta li{
+        list-style-type: none;
+    }
+    .sta li>a{
+        color: blueviolet;
+    }
+    .sta li:hover >a{
+        color: red;
+    }
+
+    .mc{
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .mc p{
+        font-size: 22px;
+        text-indent: 50px;
+    }
+    .mc p::before{
+        content: "\2022";
+        color: black;
+        margin-right: 20px;
+    }
+    .mc li{
+        list-style-type: none;
+    }
+    .mc li>a{
+        color: blueviolet;
+    }
+    .mc li:hover >a{
+        color: red;
+    }
+    .des{
+        width: 100%;
+        height: 200px;
+    }
+
+    .des p{
+        text-indent: 50px;
+        font-size: 20px;
+    }
+
+    .des p::before{
+        content: "\2022";
+        color: black;
+        margin-right: 20px;
+    }
+    .des li{
+        list-style-type: none;
+    }
+    .des li>a{
+        color: blueviolet;
+    }
+    .des li:hover >a{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="h1">Example Cafe Menu</h1>
+            <ul class="menu">
+                <li><a href="">Starters</a></li>
+                <li><a href="">Main courses</a></li>
+                <li><a href="">Desserts</a></li>
+            </ul>
+        </div>
+
+        <div class="sta">
+            <h1 class="h2">Starters</h1>
+                <p class="p1">Chestnut and Mushroom Goujons</p>
+                <p class="p2">Goat Cheese Salad</p>
+                <p class="p3">Honey Soy Chicken Kebabs</p>
+                <p class="p4">Seafood Salad</p>
+                <li><a href="#">Back to top</a></li>
+        </div>
+
+        <div class="mc">
+            <h1>Main courses</h1>
+            <p>Spinach and Ricotta Roulade</p>
+            <p>Beef Tournados with Mustard and Dill Sauce</p>
+            <p>Roast Chicken Salad</p>
+            <p>Mushroom Wellington</p>
+            <li><a href="#">Back to top</a></li>
+        </div>
+
+        <div class="des">
+            <h1>Desserts</h1>
+            <p>Lemon Sorbet</p>
+            <p>Chocolate Mud Pie</p>
+            <p>Pecan Pie</p>
+            <p>Selection of Fine Cheese from Around the World</p>
+            <li><a href="#">Back to top</a></li>
+        </div>
+
+        <div class="footer">
+            <p>Items marked with a are suitable for vegetarians</p>
+        </div>
+    </div>
+</body>
+</html>
